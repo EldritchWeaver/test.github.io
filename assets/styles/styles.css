@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #445069;
+    --secundary-color: #201E43;
+    --purple: #512B81;
+    --darknavy: #071952;
+    --black: #35374B;
+    --white: #EEEEEE;
+
+    --poppins:"Poppins", sans-serif;
+    --anton: "Anton", sans-serif;
+    --edu-beginner: "Edu VIC WA NT Beginner", sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5em;
+    background-color: var(--white);
+    text-decoration: none;
+}
+
+.padding-left-20px{
+    padding-left: 50px;
+}
+
+
+
+
+
+a:hover{
+    color: var(--secundary-color);
+}
+a:link{
+    color: var(--darknavy);
+}
+a:visited{
+    color: var(--primary-color);
+}
+a:active{
+    color: var(--white);
+}
+
+
+
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid;
+    border-bottom-color: var(--darknavy);
+    background: var(--black);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+nav ul{
+    list-style: none;
+    position: right;
+}
+
+nav li{
+    display: grid;
+    padding: 25px 20px;
+    background-color: var(--white);
+}
+
+nav li a{
+    color: var(--secundary-color);
+    font-size: 18px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: var(--darknavy);
+}
+
+#inicio img{
+    padding-top: 8px;
+    width: 90x;
+    height: 90px;
+    border-radius: 100px;
+}
+
+.servicios{
+    display: grid;
+    height: 350px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 100px; 
+}
+
+.item-servicios{
+    border: 1px solid var(--primary-color);
+    align-content: center;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.title{
+    /* border: 1px solid var(--primary-color); */
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 5%;
+    /* border-radius: 5px; */
+    text-align: center;
+    background-color: var(--white)
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 800px;
+    color: var(--black);
+}
+h3{
+    font-size: 32px
+}
+p{
+    font-size: 24;
+}
+
+.icon{
+    font-size: 60px;
+    color: var(--black);
+}
+
+.nosotros{
+    display: grid;
+    height: 350px;
+    align-content: center;
+    text-align: justify;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    padding: 100px;
+    margin-top: 100px;
+    background-color: var(--white);
+
+   /*  background-image: url(../images/fondo\ azul\ texturizado.jfif);
+    background-repeat: repeat;
+    background-attachment: fixed; */
+
+}
+.nosotros h2{
+    color: var(--purple);
+    text-transform: uppercase;
+}
+
+.button-contact{
+    border: 2px solid var(--primary-color);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px 5px;
+    background-color: var(--white);
+    font-family: var( --poppins);
+}
+
+.imagen{
+    border-radius: 10px;
+}
+h1, h2, h3, h4 p, a{
+    font-family: var( --poppins);
+}
+.contacto{
+    width: 100%;
+    background-color: var(--white);
+    font-family: var( --poppins);
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.contact1{
+    padding-left: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    display: grid;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+label{
+    color: var(--black);
+    font-size: 18px;
+}
+.submit-contact{
+    border: 2px solid var(--primary-color);
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px 5px 5px 5px 5px;
+    background-color: var(--white);
+    font-family: var( --poppins);
+}
+
+.contacto-padding1{
+    padding-left: 80px;
+}
+.contacto-padding2{
+    padding-left: 60px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 200px auto auto auto;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 8px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px;
+    margin-top: 100px;
+}
+.logo img{
+
+    padding-left: 50px;
+    width: 120px;
+    height: 120px;
+
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    align-items: center;
+}
+
+footer h3{
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    position: right;
+}
+
+footer li a{
+    color: var(--secundary-color);
+    font-size: 18px;
+    text-decoration: none;
+}
+footer li a:hover{
+    color: var(--darknavy);
+}
+
+.footer1 ul li a{
+    padding-left: 20%;
+}
+.footer2 ul li a{
+    padding-left: 30%;
+}
+
+
+/*
+.box {
+    width: 80px;
+    height: 60px;
+    position: relative;
+    background: var(--black) ;
+    animation: boxblue 10s ;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes boxblue {
+    from {background-color: #071952;}
+    to {background-color: red;}
+
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    25% {background-color: blue; left: 100; top: 0px;}
+    50% {background-color: red; left: 100px; top: 100px;}
+    75% {background-color: green; left: 0px; top: 100px;}
+    100% {background-color: purple; left: 0px; top: 0px;}
+
+    from{ left: 0px;}
+    to{ left: 500px;}
+
+}*/
+.div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-fill-mode: forwards;
+}
+  
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+  
+@keyframes mymove {
+    0% {background-color: yellow;}
+    25% {background-color: blue;}
+    50% {background-color: red;}
+    75% {background-color: green;}
+    100% {background-color: purple;}
+
+    from {left: 0px;}
+    to {left: 300px;} 
+}
+
+
+.change_color{
+    border: 1px solid var(--primary-color);
+    align-content: center;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--primary-color);
+
+    animation: change 5s infinite;
+}
+@keyframes change {
+    0%{background-color: var(--primary-color); color: var(--white); border: 6px solid var(--white);}
+    50%{background-color: var(--white);  color: var(--black); border: 6px solid var(--primary-color);}
+    100%{background-color: var(--primary-color);  color: var(--white); border: 6px solid var(--white);}
+}
+/* #change{animation-timing-function: linear;} */
+
+.fotografia{
+    height: 100px;
+    width: 100%;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: var(--white)
+    /* background-image: url(/assets/images/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.png);
+    background-position: center center;
+    background-repeat: none; */
+}
+
+
+/* GALERIA */
+
+/* .galeria{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.fotos{
+    width: 100%;
+    height: 200px;
+    position: top;
+}
+ */
+
+.galleryBody {
+    margin: 0;
+    padding: 20px;
+    background-color: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+.galleryH1 {
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 18px;
+
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.gallery-item {
+/*     width: 300px;
+    height: 200px; */
+    font-family: var(--poppins);
+    border: 5px solid var(--black);
+    align-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--white);
+
+}
+.gallery-item img {
+    max-height: 150px;
+    width: auto;
+}

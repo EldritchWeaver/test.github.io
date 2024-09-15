@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #445069;
+    --secundary-color: #201E43;
+    --purple: #512B81;
+    --darknavy: #071952;
+    --black: #35374B;
+    --white: #EEEEEE;
+
+    --poppins:"Poppins", sans-serif;
+    --anton: "Anton", sans-serif;
+    --edu-beginner: "Edu VIC WA NT Beginner", sans-serif;
+}
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5em;
+    background-color: var(--white);
+}
+
+.padding-left-20px{
+    padding-left: 50px;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid;
+    border-bottom-color: var(--darknavy);
+    background: var(--black);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+nav ul{
+    list-style: none;
+    position: right;
+}
+
+nav li{
+    display: grid;
+    padding: 25px 20px;
+    background-color: var(--white);
+    /* border-radius: 5px; */
+}
+
+nav li a{
+    color: var(--secundary-color);
+    font-size: 18px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: var(--darknavy);
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 800px;
+    color: var(--black);
+}
+h3{
+    font-size: 32px
+}
+p{
+    font-size: 24;
+}
+
+.icon{
+    font-size: 60px;
+    color: var(--black);
+}
+.imagen{
+    border-radius: 10px;
+}
+h1, h2, h3, p, a{
+    font-family: var(--edu-beginner);
+}
+
+
+/* SECTIONS */
+
+.title{
+    border: 1px solid var(--primary-color);
+    align-content: center;
+    padding: 30px;
+    padding-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--white)
+}
+
+.servicios{
+    display: grid;
+    height: 350px;
+    align-content: auto;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.item-servicios{
+    width: 10%;
+    height: 10%;
+    padding: 30px;
+    border-radius: 5px;
+}
