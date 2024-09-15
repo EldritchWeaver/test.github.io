@@ -245,11 +245,38 @@ label{
     border: 2px solid black;
     border-radius: 10px;
     gap: 8px;
-    background-color: var(--primary-color);
+    background: var(--black);
     color: var(--white);
     padding: 10px;
     margin-top: 100px;
 }
+
+footer h3{
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    position: right;
+}
+
+footer li a{
+    font-size: 18px;
+    text-decoration: none;
+
+}
+footer li a:hover{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer1 ul li a{
+    padding-left: 20%;
+}
+.footer2 ul li a{
+    padding-left: 30%;
+}
+
 .logo img{
 
     padding-left: 50px;
@@ -264,33 +291,6 @@ label{
     align-content: center;
     align-items: center;
 }
-
-footer h3{
-    text-align: center;
-}
-
-footer ul{
-    list-style: none;
-    position: right;
-}
-
-footer li a{
-    color: var(--secundary-color);
-    font-size: 18px;
-    text-decoration: none;
-}
-footer li a:hover{
-    color: var(--darknavy);
-}
-
-.footer1 ul li a{
-    padding-left: 20%;
-}
-.footer2 ul li a{
-    padding-left: 30%;
-}
-
-
 /*
 .box {
     width: 80px;
@@ -397,11 +397,9 @@ footer li a:hover{
 .galleryBody {
     margin: 0;
     padding: 20px;
-    background-color: none;
     margin: 0px;
     padding: 0px;
     line-height: 1.5em;
-    text-decoration: none;
 }
 .galleryH1 {
     text-align: center;
