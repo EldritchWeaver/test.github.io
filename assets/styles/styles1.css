@@ -11,21 +11,35 @@
     --white: #EEEEEE;
 
     --poppins:"Poppins", sans-serif;
-    --anton: "Anton", sans-serif;
-    --edu-beginner: "Edu VIC WA NT Beginner", sans-serif;
 }
-
-
 
 body{
     margin: 0px;
     padding: 0px;
     line-height: 1.5em;
     background-color: var(--white);
+    text-decoration: none;
 }
 
 .padding-left-20px{
     padding-left: 50px;
+}
+
+a:hover{
+    color: var(--secundary-color);
+    text-decoration: none;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:active{
+    color: black;
+    text-decoration: none;
 }
 
 header{
@@ -53,7 +67,6 @@ nav li{
     display: grid;
     padding: 25px 20px;
     background-color: var(--white);
-    /* border-radius: 5px; */
 }
 
 nav li a{
@@ -62,7 +75,22 @@ nav li a{
     text-decoration: none;
 }
 nav li a:hover{
-    color: var(--darknavy);
+    color: var(--purple);
+}
+
+#inicio img{
+    padding-top: 8px;
+    padding-left: 25px;
+    width: 90x;
+    height: 90px;
+}
+
+.title{
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: var(--white)
 }
 
 h2{
@@ -79,42 +107,64 @@ p{
 
 .icon{
     font-size: 60px;
-    color: var(--black);
-}
-.imagen{
-    border-radius: 10px;
-}
-h1, h2, h3, p, a{
-    font-family: var(--edu-beginner);
+    color: black;
 }
 
-
-/* SECTIONS */
-
-.title{
-    border: 1px solid var(--primary-color);
-    align-content: center;
-    padding: 30px;
-    padding-top: 30px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: var(--white)
+h1, h2, h3, h4 p, a{
+    font-family: var( --poppins);
 }
 
-.servicios{
+.footer{
     display: grid;
-    height: 350px;
-    align-content: auto;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-    background-color: var(--white);
+    grid-template-columns: 200px auto auto auto;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 8px;
+    background: var(--black);
+    color: var(--white);
     padding: 10px;
     margin-top: 100px;
 }
 
-.item-servicios{
-    width: 10%;
-    height: 10%;
-    padding: 30px;
-    border-radius: 5px;
+footer h3{
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    position: right;
+}
+
+footer li a{
+    font-size: 18px;
+    text-decoration: none;
+
+}
+footer li a:hover{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer1 ul li a{
+    padding-left: 20%;
+}
+.footer2 ul li a{
+    padding-left: 30%;
+}
+
+.logo img{
+
+    padding-left: 50px;
+    width: 120px;
+    height: 120px;
+
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    align-items: center;
 }
