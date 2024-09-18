@@ -33,15 +33,19 @@ body{
 
 a:hover{
     color: var(--secundary-color);
+    text-decoration: none;
 }
 a:link{
     color: var(--darknavy);
+    text-decoration: none;
 }
 a:visited{
-    color: var(--primary-color);
+    color: var(--darknavy);
+    text-decoration: none;
 }
 a:active{
     color: var(--white);
+    text-decoration: none;
 }
 
 
