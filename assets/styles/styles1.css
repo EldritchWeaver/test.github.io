@@ -161,7 +161,7 @@ footer li a{
 
 }
 footer li a:hover{
-    color: var(--white);
+    color: var(--purple);
     text-decoration: none;
 }
 

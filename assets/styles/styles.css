@@ -115,8 +115,8 @@ nav li a:hover{
 }
 
 
-.servicios div i:hover, h3:hover, a:hover{
-    color: white;
+.servicios div i:hover, a:hover, .h3:hover{
+    color: var(--purple);
 }
 
 .title{
@@ -275,7 +275,7 @@ footer li a{
 
 }
 footer li a:hover{
-    color: var(--white);
+    color: var(--purple);
     text-decoration: none;
 }
 
