@@ -20,7 +20,13 @@ body{
     background-color: var(--white);
     text-decoration: none;
 }
-
+/* .pagesBody {
+    margin: 0;
+    padding: 20px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5em;
+} */
 .padding-left-20px{
     padding-left: 50px;
 }
@@ -86,11 +92,12 @@ nav li a:hover{
 }
 
 .title{
+    border: 5px solid var(--black);
     align-content: center;
-    padding-top: 30px;
-    padding-bottom: 5%;
+    padding: 30px;
+    border-radius: 8px;
     text-align: center;
-    background-color: var(--white)
+    background-color: var(--white);
 }
 
 h2{
@@ -102,7 +109,7 @@ h3{
     font-size: 32px
 }
 p{
-    font-size: 24;
+    font-size: 24px;
 }
 
 .icon{
@@ -113,6 +120,17 @@ p{
 h1, h2, h3, h4 p, a{
     font-family: var( --poppins);
 }
+
+.section-one{
+    height: 100px;
+    width: 100%;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: var(--white)
+}
+
 
 .footer{
     display: grid;
@@ -167,4 +185,27 @@ footer li a:hover{
     grid-template-columns: auto auto auto auto;
     align-content: center;
     align-items: center;
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.gallery-item {
+    font-family: var(--poppins);
+    border: 5px solid var(--black);
+    align-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--white);
+
+}
+.gallery-item img {
+    max-height: 150px;
+    width: auto;
 }
