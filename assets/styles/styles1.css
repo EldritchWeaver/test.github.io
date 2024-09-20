@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*---------------------*/
 :root{
     --primary-color: #445069;
     --secundary-color: #201E43;
@@ -13,6 +14,7 @@
     --poppins:"Poppins", sans-serif;
 }
 
+/*---------------------*/
 body{
     margin: 0px;
     padding: 0px;
@@ -20,13 +22,8 @@ body{
     background-color: var(--white);
     text-decoration: none;
 }
-/* .pagesBody {
-    margin: 0;
-    padding: 20px;
-    margin: 0px;
-    padding: 0px;
-    line-height: 1.5em;
-} */
+
+/*---------------------*/
 .padding-left-20px{
     padding-left: 50px;
 }
@@ -48,6 +45,8 @@ a:active{
     text-decoration: none;
 }
 
+
+/*Header*/
 header{
     height: 100px;
     width: 100%;
@@ -55,7 +54,6 @@ header{
     border-bottom-color: var(--darknavy);
     background: var(--black);
 }
-
 nav{
     display: flex;
     flex-direction: row;
@@ -63,18 +61,15 @@ nav{
     padding-top: 20px;
     margin-right: 20px;
 }
-
 nav ul{
     list-style: none;
     position: right;
 }
-
 nav li{
     display: grid;
     padding: 25px 20px;
     background-color: var(--white);
 }
-
 nav li a{
     color: var(--secundary-color);
     font-size: 18px;
@@ -83,14 +78,16 @@ nav li a{
 nav li a:hover{
     color: var(--purple);
 }
-
 #inicio img{
     padding-top: 8px;
     padding-left: 25px;
     width: 90x;
     height: 90px;
 }
-
+.icon{
+    font-size: 60px;
+    color: black;
+}
 .title{
     border: 5px solid var(--black);
     align-content: center;
@@ -98,7 +95,6 @@ nav li a:hover{
     border-radius: 8px;
     text-align: center;
 }
-
 h2{
     font-size: 48px;
     font-weight: 800px;
@@ -110,16 +106,12 @@ h3{
 p{
     font-size: 24px;
 }
-
-.icon{
-    font-size: 60px;
-    color: black;
-}
-
 h1, h2, h3, h4 p, a{
     font-family: var( --poppins);
 }
 
+
+/*---------------------*/
 .section-one{
     height: 100px;
     width: 100%;
@@ -128,6 +120,9 @@ h1, h2, h3, h4 p, a{
     padding-bottom: 5%;
     text-align: center;
 }
+
+
+/*---------------------*/
 .video-presentacion{
     display: grid;
     height: 350px;
@@ -143,63 +138,8 @@ h1, h2, h3, h4 p, a{
     background-color: var(--white);
 }
 
-.footer{
-    display: grid;
-    grid-template-columns: 200px auto auto auto;
-    align-content: center;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 10px;
-    gap: 8px;
-    background: var(--black);
-    color: var(--white);
-    padding: 10px;
-    margin-top: 100px;
-}
 
-footer h3{
-    text-align: center;
-}
-
-footer ul{
-    list-style: none;
-    position: right;
-}
-
-footer li a{
-    font-size: 18px;
-    text-decoration: none;
-
-}
-footer li a:hover{
-    color: var(--purple);
-    text-decoration: none;
-}
-
-.footer1 ul li a{
-    padding-left: 20%;
-}
-.footer2 ul li a{
-    padding-left: 30%;
-}
-
-.logo img{
-
-    padding-left: 50px;
-    width: 120px;
-    height: 120px;
-
-}
-
-.redes{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    align-content: center;
-    align-items: center;
-}
-
-
-
+/*---------------------*/
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -219,4 +159,58 @@ footer li a:hover{
 .gallery-item img {
     max-height: 150px;
     width: auto;
+}
+.img-gallery{
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+
+/*Footer*/
+.footer{
+    display: grid;
+    grid-template-columns: 200px auto auto auto;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 8px;
+    background: var(--black);
+    color: var(--white);
+    padding: 10px;
+    margin-top: 100px;
+}
+footer h3{
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+    position: right;
+}
+footer li a{
+    font-size: 18px;
+    text-decoration: none;
+
+}
+footer li a:hover{
+    color: var(--purple);
+    text-decoration: none;
+}
+.footer1 ul li a{
+    padding-left: 20%;
+}
+.footer2 ul li a{
+    padding-left: 30%;
+}
+.logo img{
+
+    padding-left: 50px;
+    width: 120px;
+    height: 120px;
+}
+.redes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    align-items: center;
 }
